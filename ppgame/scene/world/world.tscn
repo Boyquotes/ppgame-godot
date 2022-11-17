@@ -7,20 +7,22 @@
 [node name="World" type="Node3D"]
 
 [node name="Ground" parent="." instance=ExtResource("1_wyydd")]
-transform = Transform3D(30, 0, 0, 0, 0.2, 0, 0, 0, 30, 0, 0, 0)
+transform = Transform3D(30, 0, 0, 0, 0.2, 0, 0, 0, 30, 0, -0.2, 0)
 
 [node name="Obstacles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.193173, 0)
 
-[node name="Obstacle" parent="Obstacles" instance=ExtResource("2_2gqb8")]
+[node name="Obstacle1" parent="Obstacles" instance=ExtResource("2_2gqb8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.26454, 0.502571, -2.48877)
 
-[node name="Obstacle4" parent="Obstacles" instance=ExtResource("2_2gqb8")]
+[node name="Obstacle2" parent="Obstacles" instance=ExtResource("2_2gqb8")]
 transform = Transform3D(1.8452, 0, 0, 0, 0.742195, 0, 0, 0, 1.74188, -0.73546, 0.449008, -5.48877)
 
-[node name="Obstacle2" parent="Obstacles" instance=ExtResource("2_2gqb8")]
+[node name="Obstacle3" parent="Obstacles" instance=ExtResource("2_2gqb8")]
 transform = Transform3D(1.38061, 0, -3.31189, 0, 1.48388, 0, 0.543866, 0, 8.40731, -6.62865, 0.801384, -0.622077)
 
-[node name="Obstacle3" parent="Obstacles" instance=ExtResource("2_2gqb8")]
-transform = Transform3D(1, 0, 0, 0, 3.57294, 0.78776, 0, -2.40544, 1.1701, 3.68907, 1.22312, 6.3162)
+[node name="Obstacle4" parent="Obstacles" instance=ExtResource("2_2gqb8")]
+transform = Transform3D(1, 0, 0, 0, 2.88208, 1.04826, 0, -3.20088, 0.943854, 3.68907, 0.903778, 5.78375)
 
 [node name="Player" parent="." instance=ExtResource("3_iqnl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

@@ -1,10 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://ca7nhqonvp4e6"]
+[gd_scene load_steps=7 format=3 uid="uid://ca7nhqonvp4e6"]
 
 [ext_resource type="PackedScene" uid="uid://cbvpj2yjlw0cb" path="res://scene/world/ground.tscn" id="1_wyydd"]
 [ext_resource type="PackedScene" uid="uid://br8c7aiwtpnxk" path="res://scene/world/obstacle.tscn" id="2_2gqb8"]
 [ext_resource type="PackedScene" uid="uid://b2wql1ef6ot5" path="res://scene/player/player.tscn" id="3_iqnl4"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1s5e0"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_vsbow"]
+sky_material = SubResource("ProceduralSkyMaterial_1s5e0")
+
+[sub_resource type="Environment" id="Environment_en3nn"]
+background_mode = 2
+sky = SubResource("Sky_vsbow")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="World" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_en3nn")
 
 [node name="Ground" parent="." instance=ExtResource("1_wyydd")]
 transform = Transform3D(30, 0, 0, 0, 0.2, 0, 0, 0, 30, 0, -0.2, 0)
@@ -25,4 +45,4 @@ transform = Transform3D(1.38061, 0, -3.31189, 0, 1.48388, 0, 0.543866, 0, 8.4073
 transform = Transform3D(1, 0, 0, 0, 2.88208, 1.04826, 0, -3.20088, 0.943854, 3.68907, 0.903778, 5.78375)
 
 [node name="Player" parent="." instance=ExtResource("3_iqnl4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.86264, 1, 1.98528)

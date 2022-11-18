@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ca7nhqonvp4e6"]
+[gd_scene load_steps=8 format=3 uid="uid://ca7nhqonvp4e6"]
 
 [ext_resource type="PackedScene" uid="uid://cbvpj2yjlw0cb" path="res://scene/world/ground.tscn" id="1_wyydd"]
 [ext_resource type="PackedScene" uid="uid://br8c7aiwtpnxk" path="res://scene/world/obstacle.tscn" id="2_2gqb8"]
 [ext_resource type="PackedScene" uid="uid://b2wql1ef6ot5" path="res://scene/player/player.tscn" id="3_iqnl4"]
+[ext_resource type="PackedScene" uid="uid://2owitevdj8ko" path="res://scene/weapon/pistol.tscn" id="4_th87u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1s5e0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -46,3 +47,6 @@ transform = Transform3D(1, 0, 0, 0, 2.88208, 1.04826, 0, -3.20088, 0.943854, 3.6
 
 [node name="Player" parent="." instance=ExtResource("3_iqnl4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.86264, 1, 1.98528)
+
+[node name="Pistol" parent="." instance=ExtResource("4_th87u")]
+transform = Transform3D(0.997791, 0.0664306, 0, -0.0664306, 0.997791, 0, 0, 0, 1, 3.20468, 1.24875, 1.56149)

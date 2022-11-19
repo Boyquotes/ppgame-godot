@@ -10,17 +10,35 @@
             },
             "type": "shell",
             "command": "scons",
+            "args": [
+                "platform=windows",
+                "target=editor",
+                "dev_build=yes",
+                "bits=64",
+                "-j16"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build ppgame",
+            "options": {
+                "cwd": "${workspaceFolder}/ppgame",
+            },
+            "type": "shell",
+            "command": "scons",
             "windows":{
                 "args": [
                     "platform=windows",
-                    "target=editor",
+                    "target=template_debug",
                     "dev_build=yes",
                     "bits=64",
                     "-j16"
-                ],
+                ]
             },
             "group": "build",
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "dependsOn":[ "build godot" ]
         }
     ]
 }

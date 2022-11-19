@@ -3,6 +3,7 @@
         {
             "name": "godot",
             "includePath": [
+                // godot
 				"${workspaceFolder}/godot/*",
 				"${workspaceFolder}/godot/core/**",
 				"${workspaceFolder}/godot/drivers/**",
@@ -14,7 +15,14 @@
 				"${workspaceFolder}/godot/scene/**",
 				"${workspaceFolder}/godot/servers/**",
                 "${workspaceFolder}/godot/tests/**",
-				"${workspaceFolder}/godot/thirdparty/**"
+				"${workspaceFolder}/godot/thirdparty/**",
+
+                // godot-cpp
+                "${workspaceFolder}/godot-cpp/include/godot_cpp/*",
+                "${workspaceFolder}/godot-cpp/include/godot_cpp/**",
+                "${workspaceFolder}/godot-cpp/gen/include",
+                "${workspaceFolder}/godot-cpp/include",
+                "${workspaceFolder}/godot-cpp/godot-headers"
 			],
             "defines": [
                 "_DEBUG",

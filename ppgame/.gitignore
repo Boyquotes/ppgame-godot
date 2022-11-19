@@ -1,2 +1,15 @@
 # Godot 4+ specific ignores
 .godot/
+
+# Files built by Visual Studio
+*.pdb
+
+# SCons
+.sconsign*.dblite
+
+#Intermediate file
+*.dll
+*.exp
+*.ilk
+*.lib
+*.obj

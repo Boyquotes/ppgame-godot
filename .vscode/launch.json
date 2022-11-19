@@ -2,20 +2,33 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "ppgame",
+            "name": "ppgame-editor",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.exe",
             "args": [
                 "--editor",
-                "--path", "${workspaceFolder}/ppgame"
+                "--path", "${workspaceFolder}/ppgame/game"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "internalConsole",
             "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
-            "preLaunchTask": "build godot"
-          }
+            "preLaunchTask": "build ppgame"
+          },
+          {
+            "name": "ppgame",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.exe",
+            "args": [ "--path", "${workspaceFolder}/ppgame/game" ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
+            "preLaunchTask": "build ppgame"
+          },
     ]
 }

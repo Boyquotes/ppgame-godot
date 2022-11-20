@@ -4,26 +4,29 @@
             "name": "godot",
             "includePath": [
                 // godot
-				"${workspaceFolder}/godot/*",
-				"${workspaceFolder}/godot/core/**",
-				"${workspaceFolder}/godot/drivers/**",
-				"${workspaceFolder}/godot/editor/**",
-				"${workspaceFolder}/godot/main/**",
-				"${workspaceFolder}/godot/misc/**",
-				"${workspaceFolder}/godot/modules/**",
-				"${workspaceFolder}/godot/platform/windows/**", // only windows this
-				"${workspaceFolder}/godot/scene/**",
-				"${workspaceFolder}/godot/servers/**",
+                "${workspaceFolder}/godot/*",
+                "${workspaceFolder}/godot/core/**",
+                "${workspaceFolder}/godot/drivers/**",
+                "${workspaceFolder}/godot/editor/**",
+                "${workspaceFolder}/godot/main/**",
+                "${workspaceFolder}/godot/misc/**",
+                "${workspaceFolder}/godot/modules/**",
+                "${workspaceFolder}/godot/platform/windows/**", // only windows this
+                "${workspaceFolder}/godot/scene/**",
+                "${workspaceFolder}/godot/servers/**",
                 "${workspaceFolder}/godot/tests/**",
-				"${workspaceFolder}/godot/thirdparty/**",
+                "${workspaceFolder}/godot/thirdparty/**",
 
                 // godot-cpp
                 "${workspaceFolder}/godot-cpp/include/godot_cpp/*",
                 "${workspaceFolder}/godot-cpp/include/godot_cpp/**",
                 "${workspaceFolder}/godot-cpp/gen/include",
                 "${workspaceFolder}/godot-cpp/include",
-                "${workspaceFolder}/godot-cpp/godot-headers"
-			],
+                "${workspaceFolder}/godot-cpp/godot-headers",
+
+                //  ppgame
+                "${workspaceFolder}/ppgame/src/*"
+            ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",

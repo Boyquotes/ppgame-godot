@@ -16,8 +16,8 @@
             "console": "internalConsole",
             "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
             "preLaunchTask": "build ppgame"
-          },
-          {
+        },
+        {
             "name": "ppgame",
             "type": "cppvsdbg",
             "request": "launch",
@@ -29,6 +29,6 @@
             "console": "internalConsole",
             "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
             "preLaunchTask": "build ppgame"
-          },
+        },
     ]
 }

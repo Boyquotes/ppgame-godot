@@ -14,19 +14,18 @@ env = SConscript("../godot-cpp/SConstruct")
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
 env.Append(CPPPATH=["src/"])
-sources = Glob("src/*.cpp")
+sources = []
 
-if env["platform"] == "macos":
-    library = env.SharedLibrary(
-        "game/bin/libgdexample.{}.{}.framework/libgdexample.{}.{}".format(
-            env["platform"], env["target"], env["platform"], env["target"]
-        ),
-        source=sources,
-    )
-else:
-    library = env.SharedLibrary(
-        "game/bin/libppgame{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
-        source=sources,
-    )
+# 搜索'src'目录下所有.cpp文件
+for root, dirs, files in os.walk('src'):
+    for f in files:
+        if f.endswith('.cpp'):
+            sources.append(root + '/' + f)
+
+
+library = env.SharedLibrary(
+    "game/bin/libppgame{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+    source=sources,
+)
 
 Default(library)

@@ -1,7 +1,0 @@
-[configuration]
-
-entry_symbol = "ppgame_library_init"
-
-[libraries]
-
-windows.debug.x86_64 = "res://bin/libppgame.windows.template_debug.dev.x86_64.dll"

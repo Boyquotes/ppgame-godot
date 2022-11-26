@@ -6,6 +6,10 @@
 class PPCharacter : public CharacterBody3D {
     GDCLASS(PPCharacter, CharacterBody3D);
 
+public:
+    PPCharacter();
+    ~PPCharacter();
+
 };
 
 #endif // PPCharacter_H

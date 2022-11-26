@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+Import("env")
+Import("env_modules")
+
+env_src = env_modules.Clone()
+
+# Godot source files
+env_src.add_source_files(env.modules_sources, "*.cpp")

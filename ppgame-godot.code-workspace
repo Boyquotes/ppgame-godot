@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/.godot": true,
+			"**/*.dll": true,
+			"**/*.exp": true,
+			"**/*.ilk": true,
+			"**/*.lib": true,
+			"**/*.obj": true,
+			"**/*.pdb": true,
+			"**/*.pyc": true,
+			"**/*.sconsign*.dblite": true
+		},
+		"C_Cpp.intelliSenseEngineFallback": "Enabled"
+	}
+}

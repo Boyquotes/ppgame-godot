@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Python generated
+__pycache__/
+*.pyc
+
+# Files built by Visual Studio
+*.obj

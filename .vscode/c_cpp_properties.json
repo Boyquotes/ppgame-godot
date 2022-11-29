@@ -2,24 +2,7 @@
     "configurations": [
         {
             "name": "godot",
-            "includePath": [
-                // godot
-                "${workspaceFolder}/godot/*",
-                "${workspaceFolder}/godot/core/**",
-                "${workspaceFolder}/godot/drivers/**",
-                "${workspaceFolder}/godot/editor/**",
-                "${workspaceFolder}/godot/main/**",
-                "${workspaceFolder}/godot/misc/**",
-                "${workspaceFolder}/godot/modules/**",
-                "${workspaceFolder}/godot/platform/windows",
-                "${workspaceFolder}/godot/scene/**",
-                "${workspaceFolder}/godot/servers/**",
-                "${workspaceFolder}/godot/tests/**",
-                "${workspaceFolder}/godot/thirdparty/**",
-
-                // ppgame
-                "${workspaceFolder}/ppgame/src/*"
-            ],
+            "compileCommands": "${workspaceFolder}/godot/compile_commands.json",
             "defines": [
                 "_DEBUG",
                 "UNICODE",

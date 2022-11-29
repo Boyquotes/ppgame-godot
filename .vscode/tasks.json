@@ -16,7 +16,8 @@
                 "dev_build=yes",
                 "bits=64",
                 "-j16",
-                "custom_modules=${workspaceFolder}/ppgame/src"
+                "custom_modules=${workspaceFolder}/ppgame/src",
+                "compiledb=yes"
             ],
             "group": "build",
             "problemMatcher": "$msCompile"

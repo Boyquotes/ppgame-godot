@@ -1,5 +1,5 @@
-#ifndef PPCharacter_H
-#define PPCharacter_H
+#ifndef PP_CHARACTER_H
+#define PP_CHARACTER_H
 
 #include "scene/3d/physics_body_3d.h"
 
@@ -12,4 +12,4 @@ public:
 
 };
 
-#endif // PPCharacter_H
+#endif // PP_CHARACTER_H

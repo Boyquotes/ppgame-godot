@@ -10,6 +10,9 @@ public:
     PPCharacter();
     ~PPCharacter();
 
+protected:
+    void _notification(int p_notification);
+
 };
 
 #endif // PP_CHARACTER_H
